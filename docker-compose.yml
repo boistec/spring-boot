@@ -18,8 +18,8 @@ services:
     image: dpage/pgadmin4
     restart: always
     environment:
-      PGADMIN_DEFAULT_EMAIL: boistec@domain.com
-      PGADMIN_DEFAULT_PASSWORD: G98w53d1026
+      PGADMIN_DEFAULT_EMAIL: user@domain.com
+      PGADMIN_DEFAULT_PASSWORD: secret
     ports:
       - "5050:80"
     volumes:
