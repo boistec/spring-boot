@@ -5,7 +5,6 @@ Environment to speed up the learning process of Spring Boot. The `docker-compose
 
 ### Installation
 
-
 1. Clone the repo
 2. Install docker, then, at the root level of the proyect execute the compose command (use -d for a detached process)
    ```sh
@@ -13,7 +12,7 @@ Environment to speed up the learning process of Spring Boot. The `docker-compose
    ```
 3. Connect to the database in the container
    ```sh
-   docker exec -it postgres-demo psql -U postgres   
+   docker exec -it postgres_demo psql -U postgres   
    ```
 4. Create the database
    ```sh
@@ -21,7 +20,7 @@ Environment to speed up the learning process of Spring Boot. The `docker-compose
    ```
 5. Initial data. Execute the shell command on linux/iOS. For windows you can copy and paste the commands.
    ```sh
-   .\create_data.sh
+   ./create_data.sh
    ```
 6. Open pgAdmin4. Take a look at the `PGADMIN_DEFAULT_EMAIL` and `PGADMIN_DEFAULT_PASSWORD` variables.
    ```sh
@@ -29,7 +28,14 @@ Environment to speed up the learning process of Spring Boot. The `docker-compose
    ```
 7. Connect to the database using the postgrest container as hostname
    ```js
-   hostname = 'postgres_demo'
-   user     = 'postgres'
-   password = 'Welcome'
+   Host name = 'postgres_demo'
+   Username  = 'postgres'
+   Password  = 'Welcome'
+   ```
+
+### Troubleshooting
+
+1. If you already execute the `docker-compose` command, you might need to delete the volumes or a particular       volumen (change passwords or something else). `-v` WILL DELETE ALL THE VOLUMNES, start from scratch.
+   ```sh
+   docker-compose down -v
    ```

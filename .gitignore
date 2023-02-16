@@ -2,7 +2,7 @@
 *.class
 
 # iOS
-*.DS
+*.DS_Store
 
 # Log file
 *.log
