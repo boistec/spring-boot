@@ -23,13 +23,13 @@ Environment to speed up the learning process of Spring Boot. The `docker-compose
    ```sh
    .\create_data.sh
    ```
-6. Open pgAdmin4. Take a look at the PGADMIN_DEFAULT_EMAIL and PGADMIN_DEFAULT_PASSWORD variables.
+6. Open pgAdmin4. Take a look at the `PGADMIN_DEFAULT_EMAIL` and `PGADMIN_DEFAULT_PASSWORD` variables.
    ```sh
    http://localhost:5050/
    ```
 7. Connect to the database using the postgrest container as hostname
    ```js
    hostname = 'postgres_demo'
-   user = 'postgres'
+   user     = 'postgres'
    password = 'Welcome'
    ```
