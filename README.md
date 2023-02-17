@@ -1,9 +1,11 @@
 <!-- GETTING STARTED -->
 ## Getting Started
+This is the result of watching https://app.pluralsight.com/library/courses/creating-first-spring-boot-application/
 
-Environment to speed up the learning process of Spring Boot. The `docker-compose.yaml` file is not recomended for `PRODUCTION ENVIRONMENT` but for testing pourposes.
+Added  `docker-compose.yaml` file to speed up the learning process of Spring Boot, not recomended for `PRODUCTION ENVIRONMENT` but for testing pourposes.
 
 ### Installation
+Follow the instructions to have data you need within the containers. 
 
 1. Clone the repo
 2. Install docker, then, at the root level of the proyect execute the compose command (use -d for a detached process)
