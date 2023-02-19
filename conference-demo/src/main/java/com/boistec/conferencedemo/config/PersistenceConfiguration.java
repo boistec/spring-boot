@@ -6,8 +6,10 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
 
-//@Configuration
-//public class PersistenceConfiguration {
+@Configuration
+public class PersistenceConfiguration {
+
+    //Uncomment here to override datasource by code or any other common property in the application properties by using @Bean.
 //    @Bean
 //    public DataSource dataSource() {
 //        DataSourceBuilder builder = DataSourceBuilder.create();
@@ -15,5 +17,5 @@ import javax.sql.DataSource;
 //        System.out.println("My custom datasource bean has been initialized and set");
 //        return builder.build();
 //    }
-//
-//}
+
+}
